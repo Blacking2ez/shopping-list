@@ -1,8 +1,10 @@
-
-    .row {
-        justify-content: center;
-    }
-
-    .col {
-        max-width: 30rem;
-    }
+#shopping-list {
+    max-width: 40rem;
+  }
+  
+  svg {
+    width: 1rem;
+    height: 1rem;
+    fill: #fff;
+    margin-right: 0.5rem;
+  }

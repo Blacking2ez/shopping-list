@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>🤘 Awesome Shopping List</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body>
-
-    <header></header>
-    <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                        <ul id="shopping-list" class="list-group">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Morbi leo risus</li>
-                                <li class="list-group-item">Porta ac consectetur ac</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                              </ul>
-                </div>
-            </div>
-        </div>
-    </main>
-
-
-
-    <script src="assets/js/main.js"></script>
-    
+<body class="container-fluid d-flex flex-column min-vh-100">
+  <svg class="d-none">
+    <symbol id="icon-new" viewBox="0 0 512 512">
+      <path d="M416 277H277v139h-42V277H96v-42h139V96h42v139h139v42z" />
+    </symbol>
+    <symbol id="icon-cancel" viewBox="0 0 512 512">
+      <path d="M405 137l-30-30-119 119-119-119-30 30 119 119-119 119 30 30 119-119 119 119 30-30-119-119z" />
+    </symbol>
+    <symbol id="icon-add" viewBox="0 0 512 512">
+      <path d="M186 340l-90-91-32 31 122 122 262-261-32-31z" /></svg>
+    </symbol>
+  </svg>
+  <header>
+    <h1 class="text-center">Awesome Shopping List</h1>
+  </header>
+  <main class="row justify-content-center flex-grow-1">
+    <form id="shopping-list" class="col">
+      <ul class="list-group mb-3"></ul>
+      <div class="button-group text-right">
+        <!--svg><use xlink:href="#icon-plus" aria-hidden="true"></svg-->
+        <button type="button" class="d-inline-flex align-items-center btn btn-primary">
+          <svg aria-hidden="true"><use xlink:href="#icon-new"></use></svg>
+          New Item
+        </button>
+        <button type="button" class="d-none align-items-center btn btn-secondary">
+          <svg aria-hidden="true"><use xlink:href="#icon-cancel"></use></svg>
+          Cancel
+        </button>
+        <button type="button" class="d-none align-items-center btn btn-success">
+          <svg aria-hidden="true"><use xlink:href="#icon-add"></use></svg>
+          Add Item
+        </button>
+      </div>
+    </form>
+  </main>
+  <footer class="text-center">
+    Made with 💖 @ <a href="https://www.etic.pt/" target="_blank" rel="noreferrer">etic_</a>
+  </footer>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
